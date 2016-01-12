@@ -1,0 +1,3 @@
+[submodule "lib/matgeom"]
+	path = lib/matgeom
+	url = https://github.com/dlegland/matGeom.git
