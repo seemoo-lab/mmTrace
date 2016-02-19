@@ -1,4 +1,4 @@
-<img src="logo/logo.svg" align="right" />
+<img src="logo/logo.png" align="right" />
 # mmTrace: Ray-Tracing based Millimeter Wave Propagation Simulation
 
 ### Purpose
