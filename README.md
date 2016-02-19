@@ -1,5 +1,5 @@
-<img src="logo/logo.png" align="right" width=30% height=30%/>
 # mmTrace: Ray-Tracing based Millimeter Wave Propagation Simulation
+<img src="logo/logo.png" align="right" width=25% height=25%/>
 
 ### Purpose
 mmTrace is a deterministic image-based ray-tracing simulation framework for mm-wave propagation developed in MATLAB. It supports the design of mm-wave specific protocols and, in contrast to common statistical models, deals with multiple transceivers. The strengths of mmTrace constitute signal variations at different receivers and interference of multiple transmitters, which are crucial in certain situations. It generates channel impulse responses and determines signal characteristics in arbitray scenarios. Results are validated against the statistical channel models for IEEE 802.11ad. Our analyses indicate that image-based ray-tracing, as applied in mmTrace, is a feasible approach to predict interference in mm-wave communication systems.
