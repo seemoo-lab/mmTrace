@@ -5,14 +5,11 @@
 % 	Affiliation:	SEEMOO, TU Darmstadt
 % 	Date: 			January 2016
 
-% Set the acutal paths
+% Set the actual paths
 filedir = mfilename('fullpath');
 rootdir = fileparts(filedir);
-if strfind(rootdir, '\')
-	sep = '\';	% windows
-else
-	sep = '/'; % unix
-end
+
+sep = filesep;
 
 %% Add required paths to system
 disp('Checking for dependencies and updating adding mmTrace functions to MATLAB path environment ...');
