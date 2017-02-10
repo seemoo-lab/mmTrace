@@ -44,7 +44,7 @@ function plotEnvironment( h, trace, id )
 		x = c(:,1:2:end);
 		y = c(:,2:2:end);
 		
-		fill(x.',y.',[0,0.5,0]);
+		fill(x.',y.',[0.3,0.3,0.3]);
 	end
 	
 	plot(trace.tx_set(id,1), trace.tx_set(id,2),'or');
