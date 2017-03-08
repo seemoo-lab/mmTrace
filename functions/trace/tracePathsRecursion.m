@@ -110,7 +110,7 @@ end
 if ~isempty(paths)
 	% Check that nothing is in the way, blocks mypaths
 	intersects = intersectEdgeObject(mypaths, corners);
-	intersects = any(~isnan(intersects),2);
+    intersects = sum(~isnan(intersects),2) ./ 2;
 	
 	if size(paths,1) > 1
 		%intersects = squeeze(intersects);
@@ -120,7 +120,12 @@ if ~isempty(paths)
 	
 	if ~isempty(mirrors)
 		mymirror = mirrors(5);
-		intersects(:, mymirror) = 0;
+        % Ignore one reflection in the mirror, as this is the regular case
+        if intersects(:, mymirror) > 1
+            intersects(:, mymirror) = intersects(:, mymirror) - 1;
+        else
+            intersects(:, mymirror) = 0;
+        end     
 	end
 	
 	% Remove the intercepts with the next objects
